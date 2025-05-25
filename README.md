@@ -25,17 +25,17 @@ Spin up a small, reproducible staging area for a star-schema data warehouse, loa
 export PGPASSWORD=<postgres_password>
 
 # 1 ── Create the database
-createdb -h postgres -U postgres -p 5432 billingDW
+createdb -h localhost -U postgres -p 5432 billingDW
 
 # 2 ── Build schema
-psql -h postgres -U postgres -p 5432 billingDW < star-schema.sql
+psql -h localhost -U postgres -p 5432 billingDW < star-schema.sql
 
 # 3 ── Load data
-psql -h postgres -U postgres -p 5432 billingDW < DimCustomer.sql
-psql -h postgres -U postgres -p 5432 billingDW < DimMonth.sql
-psql -h postgres -U postgres -p 5432 billingDW < FactBilling.sql
+psql -h localhost -U postgres -p 5432 billingDW < DimCustomer.sql
+psql -h localhost -U postgres -p 5432 billingDW < DimMonth.sql
+psql -h localhost -U postgres -p 5432 billingDW < FactBilling.sql
 
 # 4 ── Validate
-psql -h postgres -U postgres -p 5432 billingDW < verify.sql
+psql -h localhost -U postgres -p 5432 billingDW < verify.sql
 
 ```
