@@ -1,4 +1,4 @@
-# Billing Data Warehouse Staging Area with PostgreSQL
+# Billing Data Warehouse Staging Area with PostgreSQL and Docker
 
 Spin up a small, reproducible staging area for a star-schema data warehouse, load sample billing data, and run validation queries—all with a handful of shell commands.
 
