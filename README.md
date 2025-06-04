@@ -15,6 +15,7 @@ Spin up a small, reproducible staging area for a star-schema data warehouse, loa
 ## 2. Tech Stack
 • PostgreSQL ≥ 13  
 • Bash
+• Docker
 
 ---
 
